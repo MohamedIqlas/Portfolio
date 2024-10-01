@@ -350,8 +350,8 @@ header .navbar ul li a:hover {
     margin-top: 12rem;
   }
   .home .image img {
-    /* margin-top: -12rem; */
-    display: none;
+    margin-top: 2rem;
+/*     display: none; */
   }
   .home .content p {
     font-size: 2.2rem;
@@ -1447,5 +1447,28 @@ form .button-area {
   .modal-content {
     max-width: 90%; /* Allow more width on mobile */
     max-height: 90%; /* Allow more height on mobile */
+  }
+}
+/*Front Load  */
+.load{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.load .load-progress{
+    background-color: #fff;
+    /* border: 10px solid #fff; */
+    border-radius: 50%;
+    animation: anime 1.5s infinite linear;
+}
+@keyframes anime{
+  0%,100%{
+    width: 0;
+    height: 0;
+  }
+  50%{
+    width: 50px;
+    height: 50px;
   }
 }
