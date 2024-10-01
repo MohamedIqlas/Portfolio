@@ -573,6 +573,7 @@
     .then(function(response) {
         console.log('Sent successfully', response);
         alert('Email sent successfully!');
+        document.getElementById('contact-form').reset();
     }, function(error) {
         console.error('Failed to send', error);
         alert('Failed to send email. Check console for details.');
