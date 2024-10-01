@@ -306,6 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeModal = document.getElementById("closeModal");
 
     // Hide the modal initially
+    closeModal.style.display = "none"
     setTimeout(() => {
         modal.style.display = "none"; 
     }, 1500);
