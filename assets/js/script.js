@@ -306,7 +306,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeModal = document.getElementById("closeModal");
 
     // Hide the modal initially
-    modal.style.display = "none";
+    setTimeout(() => {
+        modal.style.display = "none"; 
+    }, 1500);
 
     // Get all view buttons
     const viewBtns = document.querySelectorAll('.view-btn');
